@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Quiz: Czy nadajesz się do mat-fiz-inf?</title>
 
-    <!-- Biblioteka QR -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
     <style>
@@ -79,7 +79,7 @@
     <div id="result"></div>
 </div>
 
-<!-- OSOBNE OKIENKO NA QR -->
+
 <div class="qr-container">
     <h2>Kod QR</h2>
     <div id="qrcode"></div>
@@ -107,7 +107,7 @@ function calculateScore() {
         "Wynik: " + score + "/10 - " + text;
 }
 
-// Generowanie QR
+
 new QRCode(document.getElementById("qrcode"), {
     text: window.location.href,
     width: 150,
